@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Secular+One&display=swap');
+
+
+* {  
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    box-shadow: 0px 3px 10px #1414142d;
+    width: 100%;
+    top: 0;
+    left: 0;
+} 
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black;
+}
+
+#ligado{
+    color: black;
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#desligado{
+    display: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding: 5px;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+body {
+    background-color: #fff;
+    margin: auto;
+}
+
+h1, footer {
+    text-align: center;
+}
+
+.secao-1 {
+    height: 100vh;
+    background-image: url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    margin-top: 0px;
+}
+
+.secao-1 > h1 {
+    width: 400px;
+    font-size: 30px;
+    margin: auto;
+}
+
+.secao-1 > img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 8px  black solid;
+}
+
+.secao-1 > img:hover{
+    border: 8px  white solid;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 750px) {
+    .secao-1{
+        display: flexbox;
+        flex-direction: column;
+    }
+
+    .secao-1 > h1 {
+        font-size: 28px;
+        margin: 70px 10px;
+    }
+
+    .secao-1 > img {
+        height: 320px;
+        width: 320px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .secao-1 > h1{
+        width: 280px;
+        font-size: 20px;
+       
+    }
+
+    .secao-1 > img {
+        height: 250px;
+        width: 250px;
+        margin: 70px 10px auto;
+       
+    }
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+
+.secao-2 {
+    
+    margin: auto;
+}
+
+.secao-2 > h1 {
+    padding: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+}
+
+.caixa {
+    background-color: rgba(255, 255, 255, 0.178);
+    border: 5px  rgb(0, 110, 255) solid;
+    border-radius: 10px;
+    height: 230px;
+    width: 380px;
+    text-align: center;
+}
+
+
+
+.caixa:hover {
+    background-color: #24252a;
+    border: 5px  rgb(255, 0, 221) solid;
+    transition: 0.5s;
+    img {
+        display: none;
+    }
+    .conteudo-caixa {
+    display: block;
+    }
+}
+
+.caixa > img {
+    height: 230px;
+    width: 380px;
+    border-radius: 3px;
+    margin: auto;
+}
+
+
+.conteudo-caixa {
+    display: none;
+
+    h2 {
+        text-align: center;
+        color:white;
+        padding: 7px;
+    }
+    
+    p {
+        text-align: justify;
+        color: aliceblue;
+        padding: 10px;
+    }
+    
+    .botao1 {
+        border: 2px  rgb(30, 255, 0) solid;
+        border-radius: 20px;
+        background-color: transparent;
+        padding: 10px;
+        width: 150px;
+        color: #fff;
+    }
+    
+    .botao1:hover {
+        box-shadow: -1px 1px 7px 1px rgb(30, 255, 0);
+    }
+    
+    .botao2 {
+        border: 2px  rgb(255, 0, 242) solid;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        width: 150px;
+        color: #fff;
+    }
+    
+    .botao2:hover{
+        box-shadow: -1px 1px 7px 1px rgb(255, 0, 242);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .caixa {
+        height: 330px;
+        width: 280px;
+    }
+    .caixa > img {
+        height: 150px;
+        width: 280px;
+        border-radius: 5px;
+        margin-top: 85px;
+    }
+    .botao1{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.secao-3 > h2 {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+}
+
+
+.caixa-1 {
+    width: 200px;
+    height: 200px;
+    border: 4px solid rgb(0, 110, 255);
+    border-radius: 10px;
+}
+
+.caixa-1:hover {
+    border: 4px solid rgb(255, 0, 255);
+    transition: 0.5s;
+}
+
+.caixa-1 > p {
+    text-align: center;
+    color: black;
+}
+
+
+
+.secao-4 > h2 {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+}
+
+.caixa-2{
+    border-right: 4px solid rgb(0, 110, 255);
+    border-left: 4px solid rgb(0, 110, 255);
+    width: 300px;
+    margin: 10px;
+}
+
+.caixa-2:hover{
+    border-right: 4px solid rgb(255, 0, 255);
+    border-left: 4px solid rgb(255, 0, 255);
+    transition: 0.5s;
+}
+
+.caixa-2 > h3{
+    text-align: center;
+    font-size: 23px;
+}
+
+.caixa-2 > p {
+    color: black;
+    margin: 10px 10px auto;
+    text-align: justify;
+}
+
+#icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 60px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+
+.secao-5 > h1 {
+    padding: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+}
+
+.secao-5 > p {
+    color: black;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 750px){
+    .secao-5 > p {
+        min-width: 280px;
+        max-width: 800px;
+        margin: 10px 20px auto;
+        text-align: justify;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .secao-5 > p {
+        min-width: 200px;
+        max-width: 600px;
+        margin: 5px;
+        font-size: 15px;
+        font-weight: bolder;
+    
+    }
+
+    footer > p {
+        color: black;
+        font-weight: bolder;
+    }
+}
+
+strong {
+    color: rgb(0, 38, 255);
+}
+
+
+footer {
+    border-top: 1px solid black;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+footer > p {
+    color: black;
+}
+
+#voltar{
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+#voltar:hover{
+    color: red;
+}
+
+p > a {
+    font-weight: bold;
+    color: rgb(0, 38, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+p > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 420px) {
+    footer > p {
+        font-size: 13px;
+    }
+}
+
+p > img {
+    height: 13px;
+    width: 13px;
+}
+
+
