@@ -310,10 +310,16 @@ img {
     padding: 15px;
 }
 
-strong {
+strong > a {
     color: rgb(0, 38, 255);
+    text-decoration: none;
 }
 
+strong > a:hover{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 footer {
     border-top: 1px solid black;

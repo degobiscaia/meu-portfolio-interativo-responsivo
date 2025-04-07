@@ -9,7 +9,6 @@ function menuShow() {
     }
 }
 
-
 function clicou1(){
     var ligado = document.getElementById('ligado');
     ligado.style.display = "none";
