@@ -73,7 +73,6 @@ header {
     transition: 0.5s;
 }
 
-
 .mobile-menu-icon {
     display: none;
 }
@@ -129,7 +128,6 @@ h1, footer {
     justify-content: center;
 }
 
-
 .secao-2 {
     
     margin: auto;
@@ -151,8 +149,6 @@ h1, footer {
     text-align: center;
 }
 
-
-
 .caixa:hover {
     background-color: #24252a;
     border: 5px  rgb(255, 0, 221) solid;
@@ -171,7 +167,6 @@ h1, footer {
     border-radius: 3px;
     margin: auto;
 }
-
 
 .conteudo-caixa {
     display: none;
@@ -242,8 +237,6 @@ h1, footer {
     color: black;
 }
 
-
-
 .secao-4 > h2 {
     text-align: center;
     margin: auto;
@@ -289,8 +282,6 @@ img {
     display: block;
     margin: auto;
 }
-
-
 
 .secao-5 > h1 {
     padding: 40px;
@@ -354,8 +345,6 @@ p > a:hover {
     color: black;
     text-decoration: underline;
 }
-
-
 
 @media screen and (max-width: 750px) {
     .nav-bar {
