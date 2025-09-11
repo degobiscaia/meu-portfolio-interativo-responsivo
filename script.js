@@ -2,6 +2,10 @@ const menuMobile=document.querySelector('.mobile-menu');
 const menuShow=document.getElementById('menuShow');
 const desligar = document.getElementById('desligado');
 const ligar = document.getElementById('ligado');
+const setaDireita = document.getElementById('seta-direita');
+const setaEsquerda = document.getElementById('seta-esquerda');
+const projeto1 = document.getElementById('projeto-1');
+const projeto2 = document.getElementById('projeto-2');
 
 menuShow.addEventListener("click",()=>{
   if(menuMobile.classList.contains('open')) {
@@ -25,6 +29,15 @@ desligar.addEventListener("click",()=>{
     ligar.style.display = "block";
 });
 
+setaDireita.addEventListener("click",()=>{
+    projeto1.style.display = "none";
+    projeto2.style.display = "flex";
+});
+
+setaEsquerda.addEventListener("click",()=>{
+    projeto1.style.display = "flex";
+    projeto2.style.display = "none";
+}); 
 
 
 
