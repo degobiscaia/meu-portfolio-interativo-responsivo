@@ -1,20 +1,17 @@
-const menuMobile=document.querySelector('.mobile-menu');
-const menuShow=document.getElementById('menuShow');
+const menuMobile=document.getElementById('menu-mobile');
+const menuShow = document.querySelector('.open');
 const desligar = document.getElementById('desligado');
 const ligar = document.getElementById('ligado');
-const setaDireita = document.getElementById('seta-direita');
-const setaEsquerda = document.getElementById('seta-esquerda');
-const projeto1 = document.getElementById('projeto-1');
-const projeto2 = document.getElementById('projeto-2');
+
 
 menuShow.addEventListener("click",()=>{
-  if(menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/menu-black_35dp.svg"; 
-    } else {
-        menuMobile.classList.add('open')
-        document.querySelector('.icon').src = "img/menu-close-black-36dp.svg";
-    }  
+    if(menuMobile.style.display === "block"){
+      document.getElementById('icon').src = "img/menu-32.png";
+      menuMobile.style.display = "none";
+    } else{
+      document.getElementById('icon').src = "img/close-32.png";
+      menuMobile.style.display = "block";
+    }
 });
 
 ligar.addEventListener("click",()=>{
@@ -29,15 +26,8 @@ desligar.addEventListener("click",()=>{
     ligar.style.display = "block";
 });
 
-setaDireita.addEventListener("click",()=>{
-    projeto1.style.display = "none";
-    projeto2.style.display = "flex";
-});
 
-setaEsquerda.addEventListener("click",()=>{
-    projeto1.style.display = "flex";
-    projeto2.style.display = "none";
-}); 
+
 
 
 

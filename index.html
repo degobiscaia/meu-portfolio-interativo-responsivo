@@ -9,37 +9,35 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar" id="Inicio">
+        <nav class="nav-bar">
             <div class="logo">
                 <i class="fa-solid fa-toggle-on" id="ligado"></i>
                 <i class="fa-solid fa-toggle-off" id="desligado" id="desligado"></i>
                 <h1>Diego</h1>
             </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#Tecnologias" class="nav-link">Tecnologias</a></li>
-                    <li class="nav-item"><a href="#Habilidades" class="nav-link">Habilidades</a></li>
-                    <li class="nav-item"><a href="#Sobre-mim" class="nav-link">Sobre mim</a></li>
-                </ul>
-            </div>
-            <div class="mobile-menu-icon">
-                <button id="menuShow"><img  class="icon" src="img/menu-black_35dp.svg" alt=""></button>
+            <ul id="menu">
+                <li class="nav-item"><a href="#Inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#Projetos">Projetos</a></li>
+                <li class="nav-item"><a href="#Tecnologias">Tecnologias</a></li>
+                <li class="nav-item"><a href="#Habilidades">Habilidades</a></li>
+                <li class="nav-item"><a href="#Sobre-mim">Sobre-mim</a></li>
+            </ul>
+            <div class="open">
+                <img src="img/menu-32.png" id="icon">
             </div>
         </nav>
-        <div class="mobile-menu">
+        <div class="" id="menu-mobile">
             <ul>
-                <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#Tecnologias" class="nav-link">Tecnologias</a></li>
-                <li class="nav-item"><a href="#Habilidades" class="nav-link">Habilidades</a></li>
-                <li class="nav-item"><a href="#Sobre-mim" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#Inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#Projetos">Projetos</a></li>
+                <li class="nav-item"><a href="#Tecnologias">Tecnologias</a></li>
+                <li class="nav-item"><a href="#Habilidades">Habilidades</a></li>
+                <li class="nav-item"><a href="#Sobre-mim">Sobre-mim</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="secao-1">
+        <section class="secao-1" id="Inicio">
             <h1 class="apresentacao">Olá!, Eu sou <strong><a href="https://github.com/degobiscaia">Diego Biscaia</a></strong>, Desenvolvedor Front-End.</h1> 
             <img src="img/workinglaptop.jpg">
         </section>
@@ -48,37 +46,36 @@
                         <section class="conteudo">
 
                             <div class="conteudo-projetos">
-                                <div>
-                                    <img src="img/back-arrow.png" id="seta-esquerda">
-                                </div>
 
-                                <div>
-                                    <div class="caixa" id="projeto-1">
-                                        <img src="img/relogio-digital.png">
-                                        <div class="conteudo-caixa">
-                                            <h2>Relógio Digital</h2>
-                                            <p>Relógio digital desenvolvido e criado utilizando figma (para projetar o site) HTML, CSS e JavaScript, capaz de se adaptar aos diferentes periodos do dia, alterando sua cor de fundo conforme os diferentes períodos do dia: manhã, tarde, noite e madrugada.</p>
-                                            <a href="https://degobiscaia.github.io/Relogio-Digital/"><input class="botao1" type="button" value="Ver Projeto"></a>
-                                            <a href="https://github.com/degobiscaia/Relogio-Digital"><input class="botao2" type="button" value="Repositório GitHub"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="caixa" id="projeto-2">
+                                <div class="caixa-projetos">
+                                    <h2>Previsão do Tempo</h2>
                                     <img src="img/previsao-do-tempo.png" alt="">
-                                    <div class="conteudo-caixa">
-                                        <h2>Previsão do tempo</h2>
-                                        <p>Este foi o meu primeiro projeto utilizando uma Api, neste além de utilizar html,css e javascript, utilizei uma Api openWeather para pegar os dados meteorológicos, de acordo com a cidade que o usuário digitar.</p>
-                                        <a href="https://degobiscaia.github.io/Previsao-do-tempo/"><input class="botao1" type="button" value="Ver Projeto"></a>
-                                        <a href="https://github.com/degobiscaia/Previsao-do-tempo"><input class="botao2" type="button" value="Repositório GitHub"></a>
+                                    <ul class="list-tecnologias">
+                                        <li class="tec-item">HTML</li>
+                                        <li class="tec-item">CSS</li>
+                                        <li class="tec-item">Javascript</li>
+                                    </ul>
+                                    <p>&nbsp;Este foi o meu primeiro projeto utilizando uma Api, neste além de utilizar html,css e javascript, utilizei uma Api openWeather para pegar os dados meteorológicos, de acordo com a cidade que o usuário digitar.</p>
+                                    <div class="botoes">
+                                        <a href="https://degobiscaia.github.io/Previsao-do-tempo/"><input class="botao" type="button" value="Ver Projeto"></a>
+                                        <a href="https://github.com/degobiscaia/Previsao-do-tempo"><input class="botao" type="button" value="Repositório GitHub"></a>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="img/right-arrow .png" id="seta-direita">
-                                </div>
+                                <div class="caixa-projetos">
+                                    <h2>Relógio Digital</h2>
+                                    <img src="img/relogio-digital.png" alt="">
+                                    <ul class="list-tecnologias">
+                                        <li class="tec-item">HTML</li>
+                                        <li class="tec-item">CSS</li>
+                                        <li class="tec-item">Javascript</li>
+                                    </ul>
+                                    <p>&nbsp;Relógio digital desenvolvido e criado utilizando figma (para projetar o site) HTML, CSS e JavaScript, capaz de se adaptar aos diferentes periodos do dia, alterando sua cor de fundo conforme os diferentes períodos do dia: manhã, tarde, noite e madrugada.</p>
+                                    <div class="botoes">
+                                        <a href="https://degobiscaia.github.io/Relogio-Digital/"><input class="botao" type="button" value="Ver Projeto"></a>
+                                        <a href="https://github.com/degobiscaia/Relogio-Digital"><input class="botao" type="button" value="Repositório GitHub"></a>
+                                    </div>
                             </div>
-
-                        </section>
+                    </section>
         </section>
         <section class="secao-3" id="Tecnologias">
             <h2>Tecnologias</h2>
@@ -154,7 +151,7 @@
             </article>
     </main>
     <footer>
-        <p>Site desenvolvido e criado por <a href="https://github.com/degobiscaia">Diego Biscaia</a>.<a href="#Inicio"><i class="fa-solid fa-circle-up" id="voltar"></i></a></p>
+        <p>Site desenvolvido por <a href="https://github.com/degobiscaia">Diego Biscaia</a>.<a href="#Inicio"><i class="fa-solid fa-circle-up" id="voltar"></i></a></p>
     </footer>
     <script src="script.js"></script>
 </body>
