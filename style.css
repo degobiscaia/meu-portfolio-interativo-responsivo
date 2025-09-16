@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-* {  
+* { 
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -28,6 +28,10 @@ header {
     background-color: #333333;
     width: 100%;
     align-items: center;
+}
+
+.logo > h1{
+    color: #fff;
 }
 
 .logo{
@@ -58,6 +62,7 @@ header {
 .nav-bar > ul li a:hover{
     transition: 0.5s;
     background-color: #111111;
+    border-radius: 25px;
 }
 
 #menuShow{
@@ -132,6 +137,7 @@ h1, footer {
 .secao-1 > h1 {
     width: 400px;
     font-size: 30px;
+    color: #fff;
     margin: auto;
 }
 
@@ -234,6 +240,7 @@ h1, footer {
 }
 
 .tec-item:hover{
+    transition: 1s;
     cursor: pointer;
     background-color: #000;
     color: yellow;
@@ -254,11 +261,27 @@ h1, footer {
     border-radius: 10px;
     color: #fff;
     font-size: 14px;
+    text-decoration: none;
+}
+
+.botao > i {
+    margin: 5px;
 }
 
 .botao:hover {
+    transition: 1s;
     cursor: pointer;
+    background-color: aqua;
     box-shadow: -1px 1px 7px 1px rgb(0, 110, 255);
+    color: #000;
+}
+
+#git{
+    border: 2px solid rgb(255, 0, 255);
+}
+
+#git:hover{
+    background-color: rgb(255, 0, 255);
 }
 
 .secao-3 > h2 {
@@ -363,8 +386,7 @@ strong > a {
 }
 
 strong > a:hover{
-  color: black;
-  text-decoration: underline;
+  color:#000;
   cursor: pointer;
 }
 
@@ -480,15 +502,32 @@ p > a:hover {
 @media screen and (max-width: 420px) {
     .caixa-projetos{
         display: flex;
-        height: 436px;
-        width: 300px;
+        height: 536px;
+        width: 298px;
         padding: 0px;
     }
 
     .caixa-projetos > img {
-        height: 142px;
-        width: 300px;
+        height: 140px;
+        width: 295px;
     }
+
+    .caixa-projetos > p{
+        margin: 4px;
+        font-size: 14px;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-2 > p{
+    font-size: 1;
+    }
+
     .secao-1 > h1{
         width: 280px;
         font-size: 20px;
